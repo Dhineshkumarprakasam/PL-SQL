@@ -1,0 +1,17 @@
+DECLARE
+
+    NUM NUMBER(5);
+    FACTORIAL NUMBER(10):=1;
+
+BEGIN
+
+    NUM:=&NUM;
+    FOR I IN 1..NUM
+    LOOP
+        FACTORIAL:=FACTORIAL*I;
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE('Factorial : '||FACTORIAL);
+
+END;
+/
